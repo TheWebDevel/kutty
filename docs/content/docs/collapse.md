@@ -10,6 +10,19 @@ title: Collapse
   <button class="btn btn-primary" aria-controls="basicCollapse" aria-expanded="false" x-spread="trigger">Open Collapse</button>
   <div class="card card-body mt-2" id="basicCollapse" x-spread="collapse" x-cloak>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
 </div>
+
+{{< /code >}}
+
+## Anywhere
+
+{{< code html >}}
+
+<button class="btn btn-primary" @click="$dispatch('toggle')">Open Collapse</button>
+
+<div x-data="collapse()">
+  <div class="card card-body mt-2" id="basicCollapse" x-spread="collapse" x-cloak x-on:toggle.window="open = !open">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
+</div>
+
 {{< /code >}}
 
 ## Accordion

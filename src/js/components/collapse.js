@@ -15,3 +15,7 @@ window.collapse = function () {
     },
   };
 };
+
+window.sadness = function () {
+  console.log("LOL");
+};
